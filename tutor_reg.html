@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("si.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 46px;
+}
+  
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type= number],input[type= eamil]{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,input[type=text]:focus,input[type=password]:focus,input[type=eamil]:focus {
+  background-color: #ddd;
+  outline: none;
+border: 1px solid #f1f1f1;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.signupbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signupbtn:hover {
+  opacity: .2;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+</style>
+</head>
+<body>
+
+<form action="tutor_reg.php" method="post" target="_blank">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name.." name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email.." name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="text" placeholder="Enter Password.." name="password" required>
+     
+      <label for="contact_number"><b>Contact Number</b></label>
+      <input type="text" placeholder="Enter Number.." name="contact_number" required>
+
+     <label for="university_name"><b>University Name</b></label>
+      <input type="text" placeholder="Enter University Name.." name="university_name" required>
+
+     <label for="department"><b>Department</b></label>
+      <input type="text" placeholder="Enter Department.." name="department" required>
+ 
+     <label for="semester"><b>Semester</b></label>
+      <input type="text" placeholder="Enter Semester.." name="semester" required>
+
+     <label for="university_id"><b>University ID</b></label>
+      <input type="text" placeholder="Enter ID.." name="university_id" required>
+
+       <label for="location"><b>Location</b></label>
+      <input type="text" placeholder="Enter Location.." name="location" required>
+
+
+       <label for="experience"><b>Experience</b></label>
+      <input type="number" placeholder="Enter Experience.." name="experience" required>
+
+
+
+
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="signupbtn">Sign Up</button>
+  </div>
+  
+  
+</form>
+
+</body>
+</html>
